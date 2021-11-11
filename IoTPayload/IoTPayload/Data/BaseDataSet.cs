@@ -8,6 +8,10 @@ namespace IoTPayload.Data
 {
     public class BaseDataSet
     {
+        public BaseDataSet()
+        {
+            Protocol = new DeviceProtocol();
+        }
         public Guid SensorId { get; set; }
         public SensorType Sensor { get; set; }
         public string SensorVersion { get; set; }

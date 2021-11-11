@@ -10,7 +10,6 @@ namespace IoTPayload.Data
     {
         public GyroDataSet()
         {
-            Protocol = new DeviceProtocol();
             Acceleration = new AxisData();
             AngularVelocity = new AxisData();
             Magnetic = new AxisData();
