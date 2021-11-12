@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace IoTPayload.Data
 {
-    public class BaseDataSet
+    public class BaseDataSet:BaseInfo
     {
         public BaseDataSet()
         {
             Protocol = new DeviceProtocol();
         }
-        public Guid SensorId { get; set; }
         public SensorType Sensor { get; set; }
-        public string SensorVersion { get; set; }
-        public string SensorSerial { get; set; }
         public DateTime SensorUTCTimeStamp { get; set; }
         public DeviceProtocol Protocol { get; set; }
     }

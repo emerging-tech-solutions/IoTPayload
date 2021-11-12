@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace IoTPayload.Data
 {
-    public class MicDataSet:BaseDataSet
+    public class BaseInfo
     {
-        public string Base64AudioString { get; set; }
+        public Guid Id { get; set; }
+        public string Version { get; set; }
+        public string Serial { get; set; }
     }
 }

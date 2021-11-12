@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace IoTPayload.Data
 {
-    public class DeviceData
+    public class DeviceData: BaseInfo
     {
         public DeviceData()
         {
             Payload = new List<dynamic>();
             TransmissionLog = new List<DataLog>();
         }
-        public Guid DeviceId { get; set; }
         public List<dynamic> Payload { get; set; } 
         public List<DataLog> TransmissionLog { get; set; }
     }
