@@ -8,6 +8,7 @@ namespace IoTPayload.Data
 {
     public class MicDataSet:BaseDataSet
     {
+        public DateTime StartUTCTimeStamp { get; set; }
         public string Base64AudioString { get; set; }
     }
 }
