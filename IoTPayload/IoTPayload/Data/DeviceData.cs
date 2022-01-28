@@ -14,6 +14,8 @@ namespace IoTPayload.Data
             TransmissionLog = new List<DataLog>();
         }
         public Guid DeviceId { get; set; }
+        public string DeviceVersion { get; set; }
+        public string DeviceSerial { get; set; }
         public List<dynamic> Payload { get; set; } 
         public List<DataLog> TransmissionLog { get; set; }
     }
